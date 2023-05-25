@@ -1,0 +1,30 @@
+cors:
+  allowed-origins: "http://localhost:3000"
+  allowed-methods: "*"
+  allowed-headers: "*"
+  exposed-headers: "*"
+
+jwt:
+  secret-key: "8e63e21fd06b78cc7ff822e362fdb0e191039eb6155e8bc91b310b9084d02706"
+  expire-after: "86400000"
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/issuecrush_test
+    username: jd
+    password: admin4049
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
