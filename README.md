@@ -84,7 +84,7 @@ git clone https://github.com/JonathanD01/issuecrush-backend.git
 Go to the project directory
 
 ```bash
-cd my-project
+cd issuecrush-backend
 ```
 
 Build jar
