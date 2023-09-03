@@ -218,7 +218,7 @@ class OrganizationServiceTest {
         String emailToAdd = faker.internet()
             .emailAddress();
 
-        OrganizationAddUserRequest addUserRequest = new OrganizationAddUserRequest(organizationUserId, emailToAdd);
+        OrganizationAddUserRequest addUserRequest = new OrganizationAddUserRequest(emailToAdd);
 
         Organization organization = mock(Organization.class);
 

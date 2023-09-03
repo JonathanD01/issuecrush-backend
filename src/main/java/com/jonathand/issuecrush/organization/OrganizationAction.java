@@ -9,7 +9,7 @@ public enum OrganizationAction {
     ADD_USER(OrganizationRole.ADMIN),
     REMOVE_USER(OrganizationRole.ADMIN),
     DELETE_TICKET(OrganizationRole.ADMIN),
-    UPDATE_TICKET(OrganizationRole.ADMIN),
+    UPDATE_TICKET(OrganizationRole.MODERATOR),
     DELETE_TICKET_COMMENT(OrganizationRole.ADMIN),
     UPDATE_TICKET_COMMENT(OrganizationRole.ADMIN),
     ;

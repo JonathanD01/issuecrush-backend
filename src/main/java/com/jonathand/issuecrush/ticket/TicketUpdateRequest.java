@@ -15,7 +15,7 @@ public record TicketUpdateRequest(
     @Nullable
     String department,
     @Nullable
-    boolean open,
+    Boolean open,
     @Nullable
     Long assigned_agent
 ) {

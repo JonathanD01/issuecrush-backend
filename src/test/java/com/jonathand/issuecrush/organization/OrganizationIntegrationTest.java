@@ -519,8 +519,7 @@ class OrganizationIntegrationTest {
         // when
 
         // add another organization user
-        OrganizationAddUserRequest organizationAddUserRequest = new OrganizationAddUserRequest(
-            organizationUserId, emailForUserToBeAdded);
+        OrganizationAddUserRequest organizationAddUserRequest = new OrganizationAddUserRequest(emailForUserToBeAdded);
 
         webTestClient.post()
             .uri(ORGANIZATION_PATH + "/{organizationId}/users", organizationId)
@@ -629,8 +628,7 @@ class OrganizationIntegrationTest {
         Long organizationUserId = organizationUserDTO.id();
 
         // add organization user to be removed to organization
-        OrganizationAddUserRequest organizationAddUserRequest = new OrganizationAddUserRequest(
-            organizationUserId, emailForUserToBeRemoved);
+        OrganizationAddUserRequest organizationAddUserRequest = new OrganizationAddUserRequest(emailForUserToBeRemoved);
 
         EntityExchangeResult<APIResponse<OrganizationUserDTO>> organizationUserExchange = webTestClient.post()
             .uri(ORGANIZATION_PATH + "/{organizationId}/users", organizationId)

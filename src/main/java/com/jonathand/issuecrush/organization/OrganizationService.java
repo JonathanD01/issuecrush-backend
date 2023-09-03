@@ -243,7 +243,7 @@ public class OrganizationService {
 
         // Validate user can add other users to organization
         organizationUtil.validateUserAuthorizationForOrganizationAction(
-            OrganizationAction.ADD_USER, addUserRequest.organizationUserId(), organizationId);
+            OrganizationAction.ADD_USER, organizationId, organizationId);
 
         // Get User object for the new user
         User user = userUtil.getUserByEmail(userEmailToAdd);

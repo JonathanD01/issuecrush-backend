@@ -241,7 +241,9 @@ public class TicketService {
         }
 
         // Set open status
-        ticket.setOpen(ticketUpdateRequest.open());
+        if (ticketUpdateRequest.open() != null) {
+            ticket.setOpen(ticketUpdateRequest.open());
+        }
 
         Long assignedAgentId = ticketUpdateRequest.assigned_agent();
 

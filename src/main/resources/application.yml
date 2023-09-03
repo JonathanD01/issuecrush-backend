@@ -26,8 +26,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/issuecrush
-    username: jd
-    password: admin4049
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
